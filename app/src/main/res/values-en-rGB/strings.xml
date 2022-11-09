@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidHarkkatyo</string>
+    <string name="profile">Profile:</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="first_name">First name:</string>
+    <string name="weather_app">Weather app</string>
+    <string name="go_to_weather">Get weather</string>
+    <string name="surname_field">Surname:</string>
+    <string name="enter_city_name">Enter a city name..</string>
+    <string name="get_weather">Get weather</string>
+    <string name="textview">TextView</string>
+    <string name="todo">TODO</string>
+</resources>

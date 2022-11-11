@@ -1,11 +1,17 @@
 package com.example.androidharkkatyo;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,10 +28,22 @@ import org.json.JSONObject;
 
 public class SecondPage extends AppCompatActivity {
 
+
+    Context context;
     private TextView name, surname;
     EditText et;
-    TextView tv, tvWindSpeed, tvWindDirection, tvHumidity, tvcountry, tvcity, tvTemp, tvFeels_Like, tvMinTemp, tvMaxTemp, tvWind, tvWeatherDesc;
+    TextView tvWindSpeed;
+    TextView tvWindDirection;
+    TextView tvHumidity;
+    TextView tvcountry;
+    TextView tvcity;
+    TextView tvTemp;
+    TextView tvFeels_Like;
+    TextView tvMinTemp;
+    TextView tvMaxTemp;
+    TextView tvWeatherDesc;
     ImageView searchIcon;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +64,13 @@ public class SecondPage extends AppCompatActivity {
         tvMaxTemp = findViewById(R.id.tvMaxTemp);
         tvWeatherDesc = findViewById(R.id.tvWeatherDesc);
         searchIcon = findViewById(R.id.searchIcon);
+
+        if (!isConnected()){
+            Toast.makeText(SecondPage.this,"No internet Connection!", Toast.LENGTH_LONG).show();
+        }
+        else {
+            Toast.makeText(SecondPage.this,"Internet connection established", Toast.LENGTH_LONG).show();
+        }
 
 
         String username = getIntent().getStringExtra("keyname");
@@ -115,7 +140,7 @@ public class SecondPage extends AppCompatActivity {
                 }, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(SecondPage.this, error.toString(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SecondPage.this, "Oops! Something went wrong!", Toast.LENGTH_SHORT).show();
 
                     }
                 });
@@ -125,7 +150,10 @@ public class SecondPage extends AppCompatActivity {
         });
     }
 
-
+    private boolean isConnected() {
+        ConnectivityManager connectivityManager = (ConnectivityManager) getApplicationContext().getSystemService(context.CONNECTIVITY_SERVICE);
+        return connectivityManager.getActiveNetworkInfo()!=null && connectivityManager.getActiveNetworkInfo().isConnectedOrConnecting();
+    }
 
 
 }

@@ -130,8 +130,6 @@ public class SecondPage extends AppCompatActivity {
 
 
 
-
-
                         } catch (JSONException e) {
                             Toast.makeText(getApplicationContext(),e.getMessage(), Toast.LENGTH_LONG).show();
                         }
@@ -150,6 +148,7 @@ public class SecondPage extends AppCompatActivity {
         });
     }
 
+    // Tarkistaa internet-yhteyden
     private boolean isConnected() {
         ConnectivityManager connectivityManager = (ConnectivityManager) getApplicationContext().getSystemService(context.CONNECTIVITY_SERVICE);
         return connectivityManager.getActiveNetworkInfo()!=null && connectivityManager.getActiveNetworkInfo().isConnectedOrConnecting();

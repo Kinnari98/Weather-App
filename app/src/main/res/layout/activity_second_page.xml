@@ -213,6 +213,7 @@
         android:layout_marginStart="20dp"
         android:backgroundTint="#3E3E3E"
         android:text="@string/cities"
+
         app:layout_constraintStart_toEndOf="@+id/addCity"
         app:layout_constraintTop_toBottomOf="@+id/et" />
 

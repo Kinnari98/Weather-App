@@ -91,6 +91,7 @@
         android:layout_marginTop="56dp"
         android:textAlignment="center"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et" />
 
@@ -102,6 +103,7 @@
         android:layout_marginTop="56dp"
         android:textAlignment="center"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/tvCity"
         app:layout_constraintTop_toBottomOf="@+id/et" />
 
@@ -109,9 +111,10 @@
         android:id="@+id/tvTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="52dp"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvCity" />
 
@@ -119,9 +122,10 @@
         android:id="@+id/tvFeels_Like"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="4dp"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTemp" />
 
@@ -129,30 +133,33 @@
         android:id="@+id/tvMinTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvFeels_Like" />
+
 
     <TextView
         android:id="@+id/tvMaxTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="12dp"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvMinTemp" />
-
 
     <TextView
         android:id="@+id/tvWindSpeed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvWeatherDesc" />
 
@@ -160,9 +167,10 @@
         android:id="@+id/tvWindDirection"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="4dp"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvWindSpeed" />
 
@@ -170,9 +178,10 @@
         android:id="@+id/tvHumidity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvMaxTemp" />
 
@@ -180,12 +189,32 @@
         android:id="@+id/tvWeatherDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="4dp"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvHumidity" />
 
+    <Button
+        android:id="@+id/addCity"
+        android:layout_width="114dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="4dp"
+        android:backgroundTint="#3E3E3E"
+        android:text="@string/add_city"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et" />
+
+    <Button
+        android:id="@+id/viewSaved"
+        android:layout_width="114dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#3E3E3E"
+        android:text="@string/cities"
+        app:layout_constraintStart_toEndOf="@+id/addCity"
+        app:layout_constraintTop_toBottomOf="@+id/et" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

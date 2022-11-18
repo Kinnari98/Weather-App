@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AndroidHarkkatyo</string>
+    <string name="app_name">Vittra Mobil</string>
     <string name="profile">Profil:</string>
     <string name="name">Förnamn</string>
     <string name="surname">Släktnamn</string>

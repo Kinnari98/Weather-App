@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AndroidHarkkatyo</string>
+    <string name="app_name">Weather-App</string>
     <string name="profile">Profile:</string>
     <string name="name">Name</string>
     <string name="surname">Surname</string>

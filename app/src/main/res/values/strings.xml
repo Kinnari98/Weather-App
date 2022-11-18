@@ -11,6 +11,6 @@
     <string name="get_weather">Hae sää</string>
     <string name="textview">TextView</string>
     <string name="todo">TODO</string>
-    <string name="add_city">ADD CITY</string>
-    <string name="cities">CITIES</string>
+    <string name="add_city">LISÄÄ</string>
+    <string name="cities">KAUPUNGIT</string>
 </resources>

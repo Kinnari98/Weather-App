@@ -199,7 +199,7 @@
     <Button
         android:id="@+id/addCity"
         android:layout_width="114dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:layout_marginStart="4dp"
         android:backgroundTint="#3E3E3E"
         android:text="@string/add_city"
@@ -208,8 +208,8 @@
 
     <Button
         android:id="@+id/viewSaved"
-        android:layout_width="114dp"
-        android:layout_height="41dp"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
         android:layout_marginStart="20dp"
         android:backgroundTint="#3E3E3E"
         android:text="@string/cities"

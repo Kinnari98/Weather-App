@@ -138,7 +138,7 @@ public class SecondPage extends AppCompatActivity {
                 @Override
                 public void onErrorResponse(VolleyError error) {
                     // Tarkistaa käyttäjäsyötteen virheet
-                    Toast.makeText(SecondPage.this, "Check your input", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SecondPage.this, "Check your input or internet connection", Toast.LENGTH_SHORT).show();
 
                 }
             });
